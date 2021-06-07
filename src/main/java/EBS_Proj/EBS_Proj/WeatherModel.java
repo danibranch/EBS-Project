@@ -14,7 +14,20 @@ public class WeatherModel {
 	public WeatherModel() {
 		
 	}
-	
+
+	@Override
+	public String toString() {
+		return "{" +
+				"(stationId," + stationId +
+				");(city,'" + city + '\'' +
+				");(temp," + temp +
+				");(rain," + rain +
+				");(wind," + wind +
+				");(direction,'" + direction + '\'' +
+				");(date," + date +
+				")}";
+	}
+
 	public WeatherModel(int stationId, String city, int temp, double rain, int wind, String direction, LocalDate date) {
 		this.stationId = stationId;
 		this.city = city;
